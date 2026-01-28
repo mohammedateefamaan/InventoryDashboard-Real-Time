@@ -54,7 +54,7 @@ The app allows Read and Update operations on inventory items and provides a resp
 1. Clone the repo:
 
 ```bash
-git clone <repo-link>
+git clone https://github.com/mohammedateefamaan/InventoryDashboard-Real-Time.git
 cd InventoryDashboard
 ```
 
