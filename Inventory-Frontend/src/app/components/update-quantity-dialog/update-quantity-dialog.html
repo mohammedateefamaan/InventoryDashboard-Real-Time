@@ -1,0 +1,30 @@
+<div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto">
+  <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center font-poppins tracking-wide">
+    Update Quantity
+  </h2>
+
+  <div class="flex flex-col space-y-4">
+    <label class="text-gray-700 font-medium">Product: {{ data.productName }}</label>
+    <input
+      type="number"
+      [(ngModel)]="quantity"
+      class="border border-gray-300 rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+      placeholder="Enter new quantity"
+    />
+
+    <div class="flex justify-end space-x-3 mt-6">
+      <button
+        (click)="onCancel()"
+        class="bg-gray-300 text-gray-800 px-5 py-2 rounded-lg hover:bg-gray-400 font-medium transition cursor-pointer"
+      >
+        Cancel
+      </button>
+      <button
+        (click)="onSave()"
+        class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-600 font-medium transition cursor-pointer"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</div>

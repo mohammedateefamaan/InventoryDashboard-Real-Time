@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "15yFQ6TO1QlieYwQfzPLv5BiNqKjQJQg3HXvenOK9/Y=",
+  "Source": "Inventory.Backend.Api",
+  "BasePath": "_content/Inventory.Backend.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

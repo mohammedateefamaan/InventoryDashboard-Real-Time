@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./Inventory.Backend.Api
+    container_name: inventory-backend
+    ports:
+      - "5271:5000"
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+    networks:
+      - inventory-net
+
+  frontend:
+    build:
+      context: ./Inventory-Frontend
+      dockerfile: Dockerfile
+    container_name: inventory-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    networks:
+      - inventory-net
+
+networks:
+  inventory-net:
+    driver: bridge
